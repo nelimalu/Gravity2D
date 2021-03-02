@@ -62,7 +62,7 @@ function save() {
 	var force = parseInt(document.getElementById("force").value);
 	var angle = parseInt(document.getElementById("angle").value % 360);
 	var fixed = document.getElementById("fixed").checked;
-	var centered = document.getElementById("centered").checked;
+	var center = document.getElementById("centered").checked;
 
 	if (creating) {
 		var name = document.getElementById("name").value;
@@ -72,7 +72,7 @@ function save() {
 
 	bodies.push(new CelestialBody(x, y, radius, mass, colour1, colour2, new Velocity(force, angle), fixed=fixed, name=name));
 
-	if (centered) {
+	if (center) {
 		centered = bodies[bodies.length - 1];
 	}
 
