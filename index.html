@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <title>Gravity</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="hero-container">
+			<div class="sidebar">
+				<canvas></canvas>
+				<script src="index.js"></script>
+			</div>
+			<div class="sidebar">
+				<div class="user-container">
+					<button class="button" id="toggleStart" onclick="toggleStart()">Start</button>
+					<hr class="rounded">
+
+					<div class="twin-button">
+						<div class="twin">
+							<button class="button" id="new" onclick="create()">Create New Object</button>
+						</div>
+						<div></div>
+						<div class="twin">
+							<button class="button" id="edit" onclick="edit()">Edit Existing Object</button>
+						</div>
+					</div>
+					<hr class="rounded">
+
+					<div id="editing">
+
+						<div id="object-name">
+							<label>Name: </label>
+							<input type="text" class="input" id="name">
+						</div>
+						<div id="select-object">
+							<label>Select Object: </label>
+							<select id="items">
+							  	<option value="item-1">Item 1</option>
+							  	<option value="item-2">Item 2</option>
+							  	<option value="item-3">Item 3</option>
+							  	<option value="item-4">Item 4</option>
+							</select>
+						</div>
+						
+						<br><hr><br>
+
+						<label>Colour: </label>
+						<input class="colorPicker" id="colorPicker1" type="color" value="#ff0000">
+						<br>
+						<label>Shadow Colour: </label>
+						<input class="colorPicker" id="colorPicker2" type="color" value="#ff0000">
+						<br>
+						<label>X Location: </label>
+						<input type="number" class="input" id="x-location">
+						<br>
+						<label>Y Location: </label>
+						<input type="number" class="input" id="y-location">
+
+						<br><br><hr><br>
+
+						<label>Radius: </label>
+						<input type="number" class="input" id="radius">
+						<br>
+						<label>Mass: </label>
+						<input type="number" class="input" id="mass">
+						<br>
+						<label>Force: </label>
+						<input type="number" class="input" id="force">
+						<br>
+						<label>Angle: </label>
+						<input type="number" class="input" id="angle">
+
+						<br><br><hr><br>
+
+						<label>Fixed: </label>
+						<input type="checkbox" class="input" id="fixed">
+						<br>
+						<label>Centered: </label>
+						<input type="checkbox" class="input" id="centered">
+
+						<br><hr class="rounded">
+
+						<button id="save" class="button", onclick="save()">Save Changes</button>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

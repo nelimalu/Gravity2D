@@ -1,0 +1,118 @@
+@font-face {
+	font-family:"d-din";
+	src: url("D-DIN.ttf") format("truetype");
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "d-din";
+	color: white;
+	scroll-behavior: smooth;
+	outline: none;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 600px;
+    background: white;
+    border: 9px solid #202020;
+}
+
+body {
+	margin: 0;
+	background: #303030;
+	overflow: hidden;
+}
+
+hr.rounded {
+	outline: none;
+	margin: 8px;
+  	background: aquamarine;
+  	border: 2px solid aquamarine;
+  	border-radius: 3px;
+}
+
+.hero-container {
+	display: grid;
+	outline: 2px bold green;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	height: 100%;
+	padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: left;
+	align-items: flex-start;
+	padding: 0rem 1rem;
+	margin: 0 auto;
+}
+
+.user-container {
+	border-radius: 5px;
+	background: #404040;
+	padding: 10px;
+	box-shadow: 0px 0px 0px 2px #202020 inset;
+	overflow: scroll;
+	overflow-x: hidden;
+	height: 79.2vh;
+	width: 50vh;
+	color: white;
+	margin-left: calc(50% - 50vh / 2);
+}
+
+.user-container::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.user-container::-webkit-scrollbar-track {
+  background: #202020;        /* color of the tracking area */
+}
+.user-container::-webkit-scrollbar-thumb {
+  background-color: #000;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: none;  /* creates padding around scroll thumb */
+}
+
+.user-container::-webkit-scrollbar-thumb:hover {
+  background-color: #000;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid aquamarine;  /* creates padding around scroll thumb */
+}
+
+.button {
+	padding: 5px;
+	font-size: 25px;
+	width: 100%;
+	color: white;
+	border: 3px solid white;
+	border-radius: 5px;
+	background: #404040;
+	transition: .3s;
+}
+.button:hover {
+	color:#000000;
+	background-color:#FFFFFF;
+}
+
+.twin-button {
+	display: grid;
+	grid-template-columns: 100fr 3fr 100fr;
+	grid-template-rows: 1fr;
+}
+
+.input {
+	color: black;
+}
+
+#editing {
+	visibility: hidden;
+}
